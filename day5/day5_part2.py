@@ -28,4 +28,4 @@ with open('day5_input.txt', 'r') as f:
         if is_nice(line):
             nice_count += 1
 
-print("%d lines are nice!" % nice_count)
+print("%d strings are nice!" % nice_count)

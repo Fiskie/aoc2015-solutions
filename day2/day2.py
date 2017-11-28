@@ -18,7 +18,7 @@ total_ribbon = 0
 
 with open('day2_input.txt') as f:
     for line in f:
-        vals = map(lambda x: int(x), line.split('x'))
+        vals = list(map(lambda x: int(x), line.split('x')))
         total_wrap += find_surface_area(*vals) + find_smallest_side(*vals)
         total_ribbon += find_shortest_distance_around_sides(*vals) + find_volume(*vals)
 

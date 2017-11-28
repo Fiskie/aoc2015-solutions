@@ -7,12 +7,12 @@ def get_lowest_hash(secret, zero_count):
 
     while True:
         i += 1
-        attempt_hash = hashlib.md5(secret + str(i)).hexdigest()
+        attempt_hash = hashlib.md5((secret + str(i)).encode('utf-8')).hexdigest()
 
         if attempt_hash[:zero_count] == zero_string:
             return i
 
 
 secret_key = "iwrupvqb"
-print("Lowest hash for 5 zeroes is %d" % get_lowest_hash(secret_key, 5))
-print("Lowest hash for 6 zeroes is %d" % get_lowest_hash(secret_key, 6))
+print("Part 1: Lowest hash for 5 zeroes is %d" % get_lowest_hash(secret_key, 5))
+print("Part 2: Lowest hash for 6 zeroes is %d" % get_lowest_hash(secret_key, 6))
