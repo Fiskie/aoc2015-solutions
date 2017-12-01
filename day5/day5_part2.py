@@ -1,5 +1,4 @@
 def is_nice(string):
-    vowel_count = 0
     has_repeated_char = False
     has_repeated_pair = False
 
