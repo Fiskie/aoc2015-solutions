@@ -66,13 +66,13 @@ def find_best_route(table, heuristic):
     return best_score
 
 
-with open('day9_input.txt', 'r') as f:
+with open('day09_input.txt', 'r') as f:
     table = create_table(f)
     best_score = find_best_route(table, shortest_route)
     print("Part 1: best route found had a score of %d" % best_score)
 
 
-with open('day9_input.txt', 'r') as f:
+with open('day09_input.txt', 'r') as f:
     table = create_table(f)
     best_score = find_best_route(table, longest_route)
     print("Part 2: best route found had a score of %d" % best_score)

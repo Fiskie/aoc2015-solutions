@@ -16,7 +16,7 @@ def find_smallest_side(l, w, h):
 total_wrap = 0
 total_ribbon = 0
 
-with open('day2_input.txt') as f:
+with open('day02_input.txt') as f:
     for line in f:
         vals = list(map(lambda x: int(x), line.split('x')))
         total_wrap += find_surface_area(*vals) + find_smallest_side(*vals)

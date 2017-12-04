@@ -52,7 +52,7 @@ def execute(command, grid, function):
 grid_size = 1000
 grid = get_empty_grid(grid_size)
 
-with open('day6_input.txt', 'r') as f:
+with open('day06_input.txt', 'r') as f:
     for line in f:
         execute(interpret(line), grid, set_light_part_1)
 
@@ -60,7 +60,7 @@ print("Part 1: %d lights are on" % sum(map(lambda row: sum(row), grid)))
 
 grid = get_empty_grid(grid_size)
 
-with open('day6_input.txt', 'r') as f:
+with open('day06_input.txt', 'r') as f:
     for line in f:
         execute(interpret(line), grid, set_light_part_2)
 

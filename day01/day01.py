@@ -20,7 +20,7 @@ def find_floor(chars, on_found_basement):
 def announce_basement(pos):
     print("basement is reached on char %d" % pos)
 
-with open("day1_input.txt") as f:
+with open("day01_input.txt") as f:
     floor = find_floor(f.read(), announce_basement)
     print("final floor is %d" % floor)
 

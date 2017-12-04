@@ -22,7 +22,7 @@ assert not is_nice("ieodomkazucvgmuy")  # no pair appearing twice
 
 nice_count = 0
 
-with open('day5_input.txt', 'r') as f:
+with open('day05_input.txt', 'r') as f:
     for line in f:
         if is_nice(line):
             nice_count += 1

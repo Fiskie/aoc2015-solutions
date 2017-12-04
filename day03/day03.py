@@ -24,7 +24,7 @@ moves = {
 world = {}
 santa = Vector(0, 0)
 
-with open('day3_input.txt') as f:
+with open('day03_input.txt') as f:
     # one present is dropped before Santa starts moving
     drop_present(santa)
 
@@ -38,7 +38,7 @@ world = {}
 santa = Vector(0, 0)
 robo_santa = Vector(0, 0)
 
-with open('day3_input.txt') as f:
+with open('day03_input.txt') as f:
     # one present is dropped before Santa starts moving
     # (assumed the same for robo santa too, but we don't care about quantity)
     drop_present(santa)
