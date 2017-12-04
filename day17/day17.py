@@ -1,6 +1,6 @@
 # This solution works by creating a bit map corresponding to the container list.
 # This will be used to iterate over every possible combination (2**20).
-# In theory this method will work with up to 64 container sizes. Not sure how to improve that.
+# In theory this method will work with up to 64 container sizes. Maybe there's a better way.
 
 
 def create_bit_map(size):
@@ -18,8 +18,6 @@ with open("day17_input.txt", 'r') as f:
 
 size = len(containers)
 bit_map = create_bit_map(size)
-total = 0
-
 totals = {}
 
 for i in range(0, 2**size):
@@ -35,7 +33,7 @@ for i in range(0, 2**size):
     if litres == 150:
         totals[used] = totals.get(used, 0) + 1
 
-print("Part 1: %d combinations.", sum(totals.values()))
+print("Part 1: %d combinations." % sum(totals.values()))
 print("Part 2: See below.")
 
 for key, value in totals.items():
